@@ -1,0 +1,298 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header_logo_group {
+  color: black;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  background-color: #ffffff00;
+}
+
+.search_none {
+  display: none;
+}
+
+.header_change {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 80px;
+  background-color: white;
+}
+
+.header_button {
+  text-decoration: none;
+  color: black;
+}
+
+.header_button:hover + .header_underbar {
+  background-color: rgb(255, 255, 255);
+  width: 5px;
+  height: 2px;
+  animation: scale-up-hor-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.header_underbar_black {
+  background-color: rgb(0, 0, 0);
+  width: 15px;
+  height: 2px;
+}
+
+.header_underbar {
+  background-color: rgba(224, 138, 138, 0);
+  width: 15px;
+  height: 2px;
+}
+
+.search_app {
+  display: none;
+}
+
+.header_button_group {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+}
+
+.header_scroll_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 5px;
+  border: 1px solid gainsboro;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.header_scroll_search_text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.header_scroll_search:hover {
+  cursor: pointer;
+}
+
+.header_scroll_search_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff385c;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.header_in {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Header_Search {
+  width: 100%;
+}
+
+.header_button_group_in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_button_bar {
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: black;
+}
+
+.header_button_none_bar {
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.header_logo_group {
+  display: flex;
+  align-items: center;
+}
+
+.header_logo {
+  font-size: 36px;
+  margin-right: 5px;
+}
+
+.header_logo_red {
+  font-size: 36px;
+  margin-right: 5px;
+  color: #ff385c;
+}
+
+.header_logoname_red {
+  color: #ff385c;
+}
+
+.header_button_group {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.header_button {
+  padding: 8px 14px;
+}
+
+.header_none_button {
+  padding: 8px 14px;
+}
+
+.header_button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@keyframes scale-up-hor-center {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.header_user_group {
+  display: flex;
+  align-items: center;
+}
+
+.header_host {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.header_user {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  margin-left: 20px;
+  padding: 5px 5px;
+}
+
+.header_logoname {
+  font-family: "GmarketSansMedium";
+  font-size: 18px;
+  font-weight: 1000;
+}
+
+.header_logoname_red {
+  font-family: "GmarketSansMedium";
+  font-size: 18px;
+  font-weight: 1000;
+  color: #ff385c;
+}
+
+.header_burger {
+  font-size: 15px;
+  margin-left: 7px;
+  margin-right: 15px;
+}
+
+.header_usercircle {
+  color: gray;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1125px) {
+  .header_logoname {
+    display: none;
+  }
+
+  .header {
+    padding: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header_in {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header_button_group {
+    justify-content: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .header_user_group {
+    position: absolute;
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .header {
+    display: none;
+  }
+
+  .search_app_padding {
+    padding: 20px;
+  }
+
+  .search_app {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(205, 205, 205);
+    box-shadow: 5px 5px 10px #0000003c;
+    border-radius: 100px;
+    width: 100%;
+  }
+
+  .search_appinputtext {
+    font-size: 16px;
+    border: none;
+    outline: none;
+  }
+
+  .search_appicon {
+    margin: 15px;
+  }
+}
